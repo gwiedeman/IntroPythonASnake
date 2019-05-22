@@ -31,19 +31,19 @@ If you are using macOS or a Linux distribution, you probably already have a vers
 4. Check for pip by running `pip -V` and `pip3 -V`
    * Your version of pip should be the same as your Python version, so if you
 
-![Example of checking for Python on Mac Terminal](C:\Users\gw234478\win\IntroPythonASnake\img\install1.png)
+![Example of checking for Python on Mac Terminal](img/install1.png)
 
 This macOS machine has Python 2, but not Python 3
 
-![Example of checking for Python with Windows Powershell](C:\Users\gw234478\win\IntroPythonASnake\img\install7.png)
+![Example of checking for Python with Windows Powershell](img/install7.png)
 
 This Windows machine does not have Python or pip
 
-![Example of checking for Python with Windows Powershell](C:\Users\gw234478\win\IntroPythonASnake\img\install2.png)
+![Example of checking for Python with Windows Powershell](img/install2.png)
 
 This Windows machine does not have Python 3
 
-![Example of checking for Python with Windows Command Prompt](C:\Users\gw234478\win\IntroPythonASnake\img\install3.png)
+![Example of checking for Python with Windows Command Prompt](img/install3.png)
 
 This Windows machine has Python 3 using the `python` command
 
@@ -53,8 +53,8 @@ This Windows machine has Python 3 using the `python` command
 
 1. Visit the Python download page at https://www.python.org/downloads/
 2. Download the latest version of the Python installer for Windows
-3. ![Screenshot of downloading the Python installer for Windows](C:\Users\gw234478\win\IntroPythonASnake\img\install4.png)
-4. When using the the installer, make sure the "Add Python 3.7 to PATH" option is checked![Screenshot the Python installer where the option to add Python to the path is selected.](C:\Users\gw234478\win\IntroPythonASnake\img\install8.png)
+3. ![Screenshot of downloading the Python installer for Windows](img/install4.png)
+4. When using the the installer, make sure the "Add Python 3.7 to PATH" option is checked![Screenshot the Python installer where the option to add Python to the path is selected.](img/install8.png)
 5. 
 
 ### macOS Machines
