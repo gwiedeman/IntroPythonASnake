@@ -8,6 +8,15 @@ Instructions on how to install Python and make sure its in your PATH so you can 
 * Have the corresponding `pip -V` or `pip3 -V` also return a `3.x.x` version of Python greater than 3.4.0
 * Successfully install ArchivesSnake
 
+## Table of Contents
+* [Do I already have Python 3?](##do-i-already-have-python-3)
+* [Installing Python 3 on Windows](#Windows-Machines)
+* [Installing Python 3 on macOS](#macos-machines)
+	* [Option 1: Using the Terminal](#option-1-using-the-terminal)
+	* [Option 2: Using the Installer](#option-2-using-the-installer)
+* [Installing Python 3 on Linux](#linux-machines)
+* [Installing ArchivesSnake](#installing-archivessnake)
+
 ## Do I already have Python 3?
 
 There are two main versions of Python, Python 2 and Python 3. We will be using Python 3, and there are very few reasons to still use Python 2.
@@ -61,10 +70,6 @@ If you are using macOS or a Linux distribution, you probably already have a vers
 
 ### Examples
 
-![Example of checking for Python on Mac Terminal](img/install1.png)
-
-This macOS machine has Python 2, but *not* Python 3, so you need to install it
-
 
 ![Example of checking for Python with Windows Powershell](img/install7.png)
 
@@ -81,9 +86,14 @@ This Windows machine does not have Python 3
 This Windows machine has Python 3 using the `python` command
 
 
-## Installing Python 3
+![Example of checking for Python on Mac Terminal](img/install1.png)
 
-### Windows Machines
+This macOS machine has Python 2, but *not* Python 3, so you need to install it
+
+
+# Installing Python 3
+
+## Windows Machines
 
 1. Visit the Python download page at https://www.python.org/downloads/
 
@@ -113,7 +123,7 @@ Success!
 
 		* C:\Python37-32
 
-### macOS Machines
+## macOS Machines
 
 ### Option 1: Using the Terminal
 
@@ -157,14 +167,14 @@ Success!
 
 ![Screenshot of Python successfully installed on macOS](img/install12.png)
 
-### Linux Machines
+## Linux Machines
 
 1. Use `sudo apt-get install python3` or `sudo yum install python3` depending on your distro
 
 2. Check your Python and Pip versions with `python3 -V` and `pip3 -v`
 
 
-## Install ArchivesSnake
+## Installing ArchivesSnake
 
 * We will use ArchivesSnake to write scripts for ArchivesSpace
 
