@@ -10,7 +10,7 @@ Instructions on how to install Python and make sure its in your PATH so you can 
 
 ## Do I already have Python 3?
 
-There are two main versions of Python, Python 2 and Python 3. We will be using Python 3, and there are very view reasons to still use Python2.
+There are two main versions of Python, Python 2 and Python 3. We will be using Python 3, and there are very few reasons to still use Python 2.
 
 If you are using macOS or a Linux distribution, you probably already have a version of Python installed, but it might be Python 3. If you are using Windows, chances are that you don't have Python installed unless you installed it yourself.
 
@@ -65,17 +65,21 @@ If you are using macOS or a Linux distribution, you probably already have a vers
 
 This macOS machine has Python 2, but *not* Python 3, so you need to install it
 
+
 ![Example of checking for Python with Windows Powershell](img/install7.png)
 
 This Windows machine does not have Python or pip
+
 
 ![Example of checking for Python with Windows Powershell](img/install2.png)
 
 This Windows machine does not have Python 3
 
+
 ![Example of checking for Python with Windows Command Prompt](img/install3.png)
 
 This Windows machine has Python 3 using the `python` command
+
 
 ## Installing Python 3
 
@@ -105,7 +109,7 @@ Success!
 
 	* The Path you need to add should be either:
 
-		* C:\Users\[USERNAME]\AppData\Local\Programs\Python\Python37-32
+		* C:\Users\\[USERNAME]\AppData\Local\Programs\Python\Python37-32
 
 		* C:\Python37-32
 
@@ -147,7 +151,9 @@ Success!
 
 ![Screenshot of downloading the Python installer for macOS](img/install11.png)
 
-3. 
+3. Follow the instructions for a basic install
+
+4. Check your Python and Pip versions in Terminal with `python3 -V` and `pip3 -v`
 
 ![Screenshot of Python successfully installed on macOS](img/install12.png)
 
@@ -161,12 +167,16 @@ Success!
 ## Install ArchivesSnake
 
 * We will use ArchivesSnake to write scripts for ArchivesSpace
+
 * To install ArchivesSnake with Pip, run either `pip3 install archivessnake` or `pip install archivessnake` depending on if you had an existing Python 2 install.
 
 ![Screenshot of ArchivesSnake successfully installed on Windows](img/install10.png)
+
 ArchivesSnake successfully installed on Windows
 
+
 ![Screenshot of ArchivesSnake successfully installed on macOS](img/install13.png)
+
 ArchivesSnake successfully installed on macOS
 
-### Once `python -V` or `python3 -V` returns 3.x.x and install ArchivesSnake, you're done!
+### Once `python -V` or `python3 -V` returns 3.x.x and ArchivesSnake installed successfully, you're done!
