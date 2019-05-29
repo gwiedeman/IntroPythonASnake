@@ -9,7 +9,7 @@ Instructions on how to install Python and make sure its in your PATH so you can 
 * Successfully install ArchivesSnake
 
 ## Table of Contents
-* [Do I already have Python 3?](#do-i-already-have-python-3)
+* [Do I already have Python 3?](##do-i-already-have-python-3)
 * [Installing Python 3 on Windows](#Windows-Machines)
 * [Installing Python 3 on macOS](#macos-machines)
 	* [Option 1: Using the Terminal](#option-1-using-the-terminal)
