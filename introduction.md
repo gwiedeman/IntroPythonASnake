@@ -1,6 +1,6 @@
 # Introduction
 
-Slides: [slides/introduction.html](slides/introduction.html)
+Slides: [http://www.gregwiedeman.com/presentations/workshop/introduction.html](http://www.gregwiedeman.com/presentations/workshop/introduction.html)
 
 ## Install a Text Editor
 

@@ -2,7 +2,7 @@
 
 ArchivesSnake Challenges
 
-Slides: [slides/challenges.html](slides/challenges.html)
+Slides: [http://www.gregwiedeman.com/presentations/workshop/challenges.html](http://www.gregwiedeman.com/presentations/workshop/challenges.html)
 
 ## Help
 

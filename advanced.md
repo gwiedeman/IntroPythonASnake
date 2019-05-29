@@ -6,7 +6,7 @@ Advanced Python and ArchiveSnake Usage
 * Reading and writing to files
 * Resources
 
-Slides: [slides/advanced.html](slides/advanced.html)
+Slides: [http://www.gregwiedeman.com/presentations/workshop/advanced.html](http://www.gregwiedeman.com/presentations/workshop/advanced.html)
 
 ## Updating ArchivesSpace Records
 
