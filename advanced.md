@@ -188,8 +188,8 @@ file.close()
 * [This Repo!](https://github.com/gwiedeman/IntroPythonASnake)
 * [ArchivesSnake Wiki](https://github.com/archivesspace-labs/ArchivesSnake/wiki)
     * [ArchivesSnake Getting Started Guide](https://github.com/archivesspace-labs/ArchivesSnake/wiki/Getting-Started-Guide)
-    * [ArchivesSnake Commonly Used Objects](https://github.com/archivesspace-labs/ArchivesSnake/wiki/Commonly-Used-Objects
-* [ArchivesSpace API Workshop](https://github.com/archivesspace/api-training
+    * [ArchivesSnake Commonly Used Objects](https://github.com/archivesspace-labs/ArchivesSnake/wiki/Commonly-Used-Objects)
+* [ArchivesSpace API Workshop](https://github.com/archivesspace/api-training)
 * [API Overview Video - Valerie Addonizio](https://www.youtube.com/watch?v=NUtuQ-LqAr4)
 * Archives Data Slack: shoes-untied.slack.com
 * [ArchivesSpace API docs](https://archivesspace.github.io/archivesspace/api/)
