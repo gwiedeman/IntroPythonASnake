@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Syntax - Python and ArchivesSnake for Archivists</title>
+        <link rel="stylesheet" href="./css/reveal.css">
+        <link rel="stylesheet" href="./css/theme/serif.css" id="theme">
+        <link rel="stylesheet" href="./css/highlight/zenburn.css">
+        <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
+
+
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section  data-markdown><script type="text/template">
+
+## Python and ArchivesSnake for Archivists
+
+### Part 2: Syntax
+</script></section><section  data-markdown><script type="text/template">
+### Comments
+
+
+```python
+
+# anything on line after a hash
+
+"""
+For multi-line comments,
+use three quotes.
+
+For explanations, etc.
+"""
+
+```
+</script></section><section  data-markdown><script type="text/template">
+### test.py
+
+```python
+from asnake.aspace import ASpace
+
+#aspace = ASpace()
+#repo = aspace.repositories(2)
+
+#print (repo)
+```
+
+* `python test.py`
+</script></section><section  data-markdown><script type="text/template">
+### Print
+
+* Sends information to the console
+* `print ("Hello!")`
+* `print("This works too.")`
+</script></section><section  data-markdown><script type="text/template">
+### test.py
+
+```python
+from asnake.aspace import ASpace
+
+#aspace = ASpace()
+#repo = aspace.repositories(2)
+
+#print (repo)
+
+print ("Hello!")
+
+print("This works too.")
+```
+</script></section><section  data-markdown><script type="text/template">
+### White space
+
+* Python uses white space
+    * Line breaks (hit enter)
+    * tabs
+    * spaces
+* Cleaner code
+* Will not run if formatted incorrectly
+</script></section><section  data-markdown><script type="text/template">
+### Variables
+
+` myVariable1 = "some text"`
+
+* Any alphanumeric  word
+* Don't start with number (0-9) or underscore (_)
+* Python will remember it until the end of the script
+</script></section><section  data-markdown><script type="text/template">
+### Variables
+
+```python
+from asnake.aspace import ASpace
+
+#aspace = ASpace()
+#repo = aspace.repositories(2)
+
+#print (repo)
+
+message = "Hello!"
+
+print (message)
+```</script></section><section  data-markdown><script type="text/template">
+### Variables
+
+```python
+from asnake.aspace import ASpace
+
+#aspace = ASpace()
+#repo = aspace.repositories(2)
+
+#print (repo)
+
+message = "Hello!"
+
+print (message)
+
+print (message2)
+```
+</script></section><section  data-markdown><script type="text/template">
+### Basic Data Types
+
+* Strings: `"This is a string"`
+* Integers: `24`
+* Floats: `24.5`
+* Booleans: `True` or `False`
+* Check with `type("this is a string")`
+</script></section><section  data-markdown><script type="text/template">
+### Basic Data Types
+
+```python
+from asnake.aspace import ASpace
+
+#aspace = ASpace()
+#repo = aspace.repositories(2)
+
+#print (repo)
+
+myString = "This is a string of text"
+
+myInteger = 57
+
+stringNumber = "57"
+
+myFloat = 23.5
+
+skyIsBlue = True
+
+print (type(myString))
+print (type(myInteger))
+print (type(stringNumber))
+print (type(myFloat))
+print (type(skyIsBlue))
+```
+</script></section><section  data-markdown><script type="text/template">
+### Math with Operators
+
+* Operators: `+` `-` `*` `/`
+
+```python
+from asnake.aspace import ASpace
+
+#aspace = ASpace()
+#repo = aspace.repositories(2)
+
+#print (repo)
+
+myInteger = 57
+
+stringNumber = "57"
+
+myFloat = 23.5
+
+answer = myInteger + myFloat
+
+print (answer)
+```
+</script></section><section  data-markdown><script type="text/template">
+### Math with Operators
+
+```python
+from asnake.aspace import ASpace
+
+#aspace = ASpace()
+#repo = aspace.repositories(2)
+
+#print (repo)
+
+myInteger = 57
+
+stringNumber = "57"
+
+myFloat = 23.5
+
+answer = myInteger * myFloat
+print (answer)
+answer2 = stringNumber + myFloat
+print (answer2)
+```
+</script></section><section  data-markdown><script type="text/template">
+### Changing Data Types
+
+* Change to string with `str()`
+* Change to integer with `int()`
+* Change to float with `float()`
+</script></section><section  data-markdown><script type="text/template">
+### Changing Data Types
+
+```python
+from asnake.aspace import ASpace
+
+#aspace = ASpace()
+#repo = aspace.repositories(2)
+
+#print (repo)
+
+myInteger = 57
+
+stringNumber = "57"
+
+myFloat = 23.5
+
+answer = myInteger + int(stringNumber)
+print (answer)
+print (float(stringNumber))
+```
+</script></section><section  data-markdown><script type="text/template">
+### ArchivesSpace Data!
+
+* Get repository name as a string
+
+```python
+from asnake.aspace import ASpace
+
+aspace = ASpace()
+repo = aspace.repositories(2)
+
+title = repo.name
+
+print (title)
+```
+</script></section><section  data-markdown><script type="text/template">
+### Concatenating Strings
+
+* Use `+` to join strings together
+
+```python
+from asnake.aspace import ASpace
+
+aspace = ASpace()
+repo = aspace.repositories(2)
+title = repo.name
+
+print ("Repository Title: " + title)
+```
+</script></section><section  data-markdown><script type="text/template">
+### Concatenating Strings
+
+* You cannot concatenate strings and integers
+
+```python
+from asnake.aspace import ASpace
+
+aspace = ASpace()
+repo = aspace.repositories(2)
+title = repo.name
+
+myCount = 25
+
+print ("The " + title + " is the " + myCount + "th repository")
+```
+</script></section><section  data-markdown><script type="text/template">
+### Concatenating Strings
+
+* Use `str()`
+
+```python
+from asnake.aspace import ASpace
+
+aspace = ASpace()
+repo = aspace.repositories(2)
+title = repo.name
+
+myCount = 25
+
+print ("The " + title + " is the " + str(myCount) + "th repository")
+```
+</script></section><section  data-markdown><script type="text/template">
+### String Methods
+
+* Get 5th character: `title[4]`
+* Get 5th-8th characters: `title[4:7]`
+* Length of string: `len(title)`
+* Strip whitespace: `title.strip()`
+* Uppercase: `title.upper()`
+* Lowercase: `title.lower()`
+* Replace characters: `title.replace("&", "and")`
+</script></section><section  data-markdown><script type="text/template">
+### String Methods
+
+```python
+from asnake.aspace import ASpace
+
+aspace = ASpace()
+repo = aspace.repositories(2)
+title = repo.name
+
+print (title[5])
+print (title[5:14])
+print (len(title))
+
+extras = "   " + title + "\n\n"
+print (extras)
+print (extras.strip())
+
+print (title.upper())
+print (title.lower())
+```
+</script></section><section  data-markdown><script type="text/template">
+### String Methods
+
+* Replace characters:
+    * `title.replace("&", "and")`
+* Starts with: `title.startswith()`
+* Ends with: `title.endswith()`
+</script></section><section  data-markdown><script type="text/template">
+### String Methods
+
+```python
+from asnake.aspace import ASpace
+
+aspace = ASpace()
+repo = aspace.repositories(2)
+title = repo.name
+
+changed = title.replace("&", "and")
+
+print (title.startswith("me"))
+escaped = title.replace(".", "")
+print (escaped.lower())
+print (escaped.lower().startswith("me"))
+
+print (changed)
+```
+</script></section><section  data-markdown><script type="text/template">
+## Explore Strings
+
+Cheatsheet:
+
+[https://github.com/gwiedeman/IntroPythonASnake/blob/master/syntax.md](https://github.com/gwiedeman/IntroPythonASnake/blob/master/syntax.md)
+</script></section><section  data-markdown><script type="text/template">
+## Python and ArchivesSnake for Archivists
+
+[Part 3: Data](data.html)</script></section></div>
+        </div>
+
+        <script src="./lib/js/head.min.js"></script>
+        <script src="./js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: './plugin/zoom-js/zoom.js', async: true },
+              { src: './plugin/notes/notes.js', async: true },
+              { src: './plugin/math/math.js', async: true }
+            ];
+
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default', // none/fade/slide/convex/concave/zoom
+              dependencies: deps
+            };
+
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+
+            var options = {"transition":"fade"};
+            options = extend(defaultOptions, options, queryOptions);
+        </script>
+
+
+        <script>
+            Reveal.initialize(options);
+        </script>
+    </body>
+</html>

@@ -1,22 +1,27 @@
-# Advanced
+---
+title: Advanced - Python and ArchivesSnake for Archivists
+revealOptions:
+    transition: 'fade'
+---
 
-Advanced Python and ArchiveSnake Usage
-* Updating ArchivesSpace records
-* `os` module
-* Reading and writing to files
-* Resources
+## Python and ArchivesSnake for Archivists
 
-Slides: [http://www.gregwiedeman.com/presentations/workshop/advanced.html](http://www.gregwiedeman.com/presentations/workshop/advanced.html)
+### Part 5: Advanced
 
-## Updating ArchivesSpace Records
+---
+
+### Updating ArchivesSpace Records
 
 * When you edit ArchivesSnake objects, you are not editing the data in ArchivesSpace
 * Need to POST updates back to ArchivesSpace
 * Soon it will be easy!
     * `collection.save()`
-* Now it is challenging, need to use ArchivesSnake Client layer
-
+* Now it's more challenging, need to use ArchivesSnake Client layer
 * Need to get and edit JSON
+
+---
+
+### Code for Updating Now
 
 ```python
 from asnake.aspace import ASpace
@@ -38,7 +43,9 @@ update = client.post(file.uri, json=fileJson)
 print (update)
 ```
 
-#### Updating a Collection Note
+---
+
+### Updating a Collection Note
 
 ```python
 from asnake.aspace import ASpace
@@ -58,6 +65,10 @@ for note in collectJson["notes"]:
             print (subnote)
 ```
 
+---
+
+### Updating a Collection Note
+
 ```python
 from asnake.aspace import ASpace
 from asnake.client import ASnakeClient
@@ -76,10 +87,12 @@ for note in collectJson["notes"]:
             subnote["content"] = "My new Note is very, very short."
             
 update = client.post(collectJson["uri"], json=collectJson)
-print
+print (update.status_code)
 ```
 
-## File Paths in Python Scripts
+---
+
+### File Paths in Python Scripts
 
 * Unix-style paths: `/home/username/folder`
 * Windows-style paths: `C:\Users\Username\Documents`
@@ -90,9 +103,12 @@ print
 unixPath = "/home/username/folder"
 windowsPath = "C:\\Users\\Username\\Documents"
 uncPath = "\\\\Server\\folder"
+
 ```
 
-## Python OS Module
+---
+
+### Python OS Module
 
 * Read and edit folders and files
 
@@ -114,7 +130,9 @@ for folder in os.listdir(startDir):
                     print (file)
 ```
 
-## Reading Text from a File
+---
+
+### Reading Text from a File
 
 ```python
 import os
@@ -129,7 +147,9 @@ print (text)
 file.close()
 ```
 
-## Serialize ArchivesSpace Data
+---
+
+### Serialize ArchivesSpace Data
 
 ```python
 import json
@@ -149,7 +169,9 @@ file.write(json.dumps(collectJson, indent=4))
 file.close()
 ```
 
-## Serialize ASpace Data to CSV
+---
+
+### Serialize ASpace Data to CSV
 
 ```python
 import csv
@@ -182,7 +204,9 @@ writer.writerows(sheet)
 file.close()
 ```
 
-## Resources
+---
+
+### Resources
 
 * Search and use Stack Overflow answers!
 * [This Repo!](https://github.com/gwiedeman/IntroPythonASnake)
@@ -194,13 +218,16 @@ file.close()
 * Archives Data Slack: shoes-untied.slack.com
 * [ArchivesSpace API docs](https://archivesspace.github.io/archivesspace/api/)
 
-
-
-
 ---
 
-[Part 1: Introduction](introduction.md)
-[Part 2: Syntax](syntax.md)
-[Part 3: Data](data.md)
-[Part 4: Challenges](challenges.md)
-[Part 5: Advanced](advanced.md)
+## Python and ArchivesSnake for Archivists
+
+[Part 1: Introduction](introduction.html)
+
+[Part 2: Syntax](syntax.html)
+
+[Part 3: Data](data.html)
+
+[Part 4: Challenges](challenges.html)
+
+[Part 5: Advanced](advanced.html)
