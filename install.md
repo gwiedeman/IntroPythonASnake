@@ -5,25 +5,32 @@ Instructions on how to install Python and make sure its in your PATH so you can 
 ## Objectives
 
 * Have `python -V` or `python3 -V` return a `3.x.x` version of Python greater than 3.4.0
-* Have the corresponding `pip -V` or `pip3 -V` also return a `3.x.x` version of Python greater than 3.4.0
 * Successfully install ArchivesSnake
+* Install a Text Editor
 
 ## Table of Contents
-* [Do I already have Python 3?](##do-i-already-have-python-3)
-* [Installing Python 3 on Windows](#Windows-Machines)
-* [Installing Python 3 on macOS](#macos-machines)
-	* [Option 1: Using the Terminal](#option-1-using-the-terminal)
-	* [Option 2: Using the Installer](#option-2-using-the-installer)
-* [Installing Python 3 on Linux](#linux-machines)
-* [Installing ArchivesSnake](#installing-archivessnake)
+1. [Installing Python](#installing-python)
+   * [Do I already have Python 3?](#do-i-already-have-python-3)
+   * [Installing Python 3 on Windows](#windows-machines)
+   * [Installing Python 3 on macOS](#macos-machines)
+     * [Option 1: Using the Terminal](#option-1-using-the-terminal)
+     * [Option 2: Using the Installer](#option-2-using-the-installer)
+   * [Installing Python 3 on Linux](#linux-machines)
+   * [Check Your Python 3 Command](#check-your-python-command)
+2. [Installing ArchivesSnake](#installing-archivessnake)
+3. [Installing a Text Editor](#installing-a-text-editor)
 
-## Do I already have Python 3?
+## Installing Python
+
+### Do I already have Python 3?
 
 There are two main versions of Python, Python 2 and Python 3. We will be using Python 3, and there are very few reasons to still use Python 2.
 
-If you are using macOS or a Linux distribution, you probably already have a version of Python installed, but it might be Python 3. If you are using Windows, chances are that you don't have Python installed unless you installed it yourself.
+If you are using macOS or a Linux distribution, you probably already have a version of Python installed, but it might only be Python 2. If you are using Windows, chances are that you don't have Python installed unless you installed it yourself.
 
-1. To check open a command line terminal. 
+##### Check my Python Install
+
+1. To check you Python install open a command line terminal. 
 
    * For macOS and Linux operative systems, this is the program called  "Terminal."
 
@@ -48,6 +55,7 @@ If you are using macOS or a Linux distribution, you probably already have a vers
      * if you got `Python 3.x.x` , you have Python 3 installed
 
        * Make sure you have `Python 3.4.x` or later.
+       * Your Python 3 command is `python3`
 
 3. If you have Python 2, try typing `python3 -V` and press enter.
 
@@ -62,13 +70,10 @@ If you are using macOS or a Linux distribution, you probably already have a vers
    * if you got `Python 3.x.x` , you have Python 3 installed
 
      * Make sure you have `Python 3.4.x` or later.
+     * Your Python 3 command is `python3`
 
-4. Check for pip by running `pip -V` and `pip3 -V`
 
-   * Your version of pip should be the same as your Python version, so if your `python` or `python3` output is `3.7.2`, then your corresponding `pip` or `pip3` output should be `3.7`
-   
-
-### Examples
+#### Examples
 
 
 ![Example of checking for Python with Windows Powershell](img/install7.png)
@@ -91,9 +96,8 @@ This Windows machine has Python 3 using the `python` command
 This macOS machine has Python 2, but *not* Python 3, so you need to install it
 
 
-# Installing Python 3
 
-## Windows Machines
+### Windows Machines
 
 1. Visit the Python download page at https://www.python.org/downloads/
 
@@ -101,31 +105,31 @@ This macOS machine has Python 2, but *not* Python 3, so you need to install it
 
 ![Screenshot of downloading the Python installer for Windows](img/install4.png)
 
-3. When using the the installer, make sure the "Add Python 3.7 to PATH" option is checked
+3. When using the the installer, **make sure the "Add Python 3.7 to PATH" option is checked**
 
 ![Screenshot the Python installer where the option to add Python to the path is selected.](img/install8.png)
 
 4. Close all Powershell and Command Prompt windows and reopen one
 
-5. Check for Python and Pip with `python -V` and `pip -V`
+5. Check for Python with `python -V`
 
 ![Screenshot of Python successfully installed on Windows](img/install9.png)
 
 Success!
 
-6. If you installed Python, but were still unable to use in in Powershell or the Command Prompt, you need to add it to your path
+6. If you installed Python, but were still unable to use in in Powershell or the Command Prompt, you need to add it to your path. You can try the instructions below, or I can help you on the workshop day.
 
 	* Follow the "Setting up Python" instructions here: https://practicaltechnologyforarchives.org/issue7_wiedeman/
 
-	* The Path you need to add should be either:
+	* The Path you need to add is likely to be either:
 
 		* C:\Users\\[USERNAME]\AppData\Local\Programs\Python\Python37-32
 
 		* C:\Python37-32
 
-## macOS Machines
+### macOS Machines
 
-### Option 1: Using the Terminal
+#### Option 1: Using the Terminal
 
 1. Install Xcode if you don't already have it
 
@@ -151,9 +155,9 @@ Success!
 
    * Run `brew install python3`
    
-   * Check your Python and Pip versions with `python3 -V` and `pip3 -v`
+   * Check your Python version with `python3 -V` 
 
-### Option 2: Using the Installer
+#### Option 2: Using the Installer
 
 1. Visit the Python download page at https://www.python.org/downloads/
 
@@ -163,22 +167,33 @@ Success!
 
 3. Follow the instructions for a basic install
 
-4. Check your Python and Pip versions in Terminal with `python3 -V` and `pip3 -v`
+4. Check your Python version in Terminal with `python3 -V` 
 
 ![Screenshot of Python successfully installed on macOS](img/install12.png)
 
-## Linux Machines
+### Linux Machines
 
 1. Use `sudo apt-get install python3` or `sudo yum install python3` depending on your distro
 
-2. Check your Python and Pip versions with `python3 -V` and `pip3 -v`
+2. Check your Python version with `python3 -V` 
+
+### Check Your Python 3 Command
+
+* Your Python 3 command will wither by `python3` or `python`
+	* If you had an existing version of Python 2 installed, your command will likely be `python3`, otherwise it will be likely just to be `python`
+
+--> If `python -V` returns "Python 3.x.x," then your Python 3 command is `python`
+
+--> If `python3 -V` returns "Python 3.x.x," then your Python 3 command is  `python3`
 
 
-## Installing ArchivesSnake
+
+## 2. Installing ArchivesSnake
 
 * We will use ArchivesSnake to write scripts for ArchivesSpace
-
-* To install ArchivesSnake with Pip, run either `pip3 install archivessnake` or `pip install archivessnake` depending on if you had an existing Python 2 install.
+* To install ArchivesSnake, run the command that has your correct Python 3 command:
+  * `python -m pip install archivessnake`
+  * `python3 -m pip install archivessnake`
 
 ![Screenshot of ArchivesSnake successfully installed on Windows](img/install10.png)
 
@@ -189,4 +204,17 @@ ArchivesSnake successfully installed on Windows
 
 ArchivesSnake successfully installed on macOS
 
-### Once `python -V` or `python3 -V` returns 3.x.x and ArchivesSnake installed successfully, you're done!
+
+
+## 3. Installing a Text Editor
+
+* You should install a text editor if you don't already have one with line numbers and syntax highlighting
+* You *can* use Notead or Text Edit, but I would recommend installing something else that will make the code easier to read
+* There are many good text editors, including:
+	* [Notepad++](https://notepad-plus-plus.org/) (Windows only)
+	* [Atom](https://atom.io/)
+	* [Sublime Text](https://www.sublimetext.com/)
+	* [Visual Studio Code](https://code.visualstudio.com/)
+
+
+
