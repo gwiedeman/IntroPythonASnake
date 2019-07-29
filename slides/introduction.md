@@ -18,7 +18,6 @@ University Archivist
 
 University at Albany, SUNY
 
-
 ---
 
 ### Dive in Approach
@@ -53,7 +52,7 @@ University at Albany, SUNY
 
 * Wifi issues
 * Path issues
-* 2 ArchivesSpace Instances
+* ArchivesSpace Instances
 	* we may break them
 
 ---
@@ -67,7 +66,6 @@ University at Albany, SUNY
     * Client layer
     * Abstraction layer
 * Thanks to Dave Mayo
-
 
 ---
 
@@ -98,7 +96,7 @@ University at Albany, SUNY
     * ArchivesSpace Data
     
 * [Challenges](challenges.html)
-    
+  
 ---
 
 ### Outline (3/3)
@@ -108,17 +106,6 @@ University at Albany, SUNY
     * Read local folders and text files
     * Write ArchivesSpace data to local text file
     
----
-
-### Setup: Text Editor
-
-Line numbers and syntax highlighting
-
-* Notepad++ (Windows)
-* Atom
-* Sublime Text
-* jEdit
-
 ---
 
 ### Command Line Basics
@@ -265,6 +252,7 @@ logging_config:
 	* name ends in ".py"
 	* Might start with:
     
+
 `#!/usr/bin/env python3`
 
 ---

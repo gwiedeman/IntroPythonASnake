@@ -2,15 +2,6 @@
 
 Slides: [http://www.gregwiedeman.com/presentations/workshop/introduction.html](http://www.gregwiedeman.com/presentations/workshop/introduction.html)
 
-## Install a Text Editor
-
-Something with line numbers and syntax highlighting
-
-* [Notepad++](https://notepad-plus-plus.org/download/v7.7.html) (Windows)
-* [Atom](https://atom.io/)
-* [Sublime Text](https://www.sublimetext.com/3)
-* [jEdit](http://www.jedit.org/)
-
 ## Command Line Basics
 
 ### List contents of directory
