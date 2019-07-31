@@ -73,7 +73,9 @@ University at Albany, SUNY
 
 * [Introduction](introduction.html)
     * Command Line Basics
-    * Setup/Install
+    * Setup
+        * Local install
+        * Jupyter Notebooks as backup
     * First Python script
     * Jupyter Notebook basics
     
@@ -144,7 +146,6 @@ open .
 ii .
 ```
 
-
 ---
 
 ### Command Line Basics
@@ -175,14 +176,32 @@ ii .
 
 ---
 
-### Command Line Basics
+### Setup
 
-* Use the command line to run programs
-    * Python
+Do I have a Text Editor?
+
+* [Notepad++](https://notepad-plus-plus.org/) (Windows only)
+* [Atom](https://atom.io/)
+* [Sublime Text](https://www.sublimetext.com/)
+* [Visual Studio Code](https://code.visualstudio.com/)
 
 ---
 
-### Setup/Install
+### Configure Text editor (optional)
+
+Try to change tabs to use spaces
+
+* Notepad++
+    * Settings -> Preferences... -> Language -> Check "Replace by space"
+* Sublime Text 3
+    * View -> Indentation -> Indent Using Spaces
+* Atom
+    * Default settings are fine.
+    * to change: File -> Settings -> Editor -> Uncheck "Soft Tabs"
+
+---
+
+### Setup
 
 Do you have Python 3?
 
@@ -194,19 +213,7 @@ python3 -V
 > python 3.6.3
 ```
 
----
-
-### Setup Python
-
-* Install Python3, Pip
-
-```
-
-python -V
-
-python3 -V
-
-```
+What is your Python command?
 
 ---
 
@@ -219,42 +226,37 @@ python3 -V
 
 ---
 
-### Setup Pip
+### Setup
+
+* Do I have ArchivesSnake?
 
 ```
+python3 -c "import asnake"
+```
 
-pip -V
+* You should get no response. If you get an error, install ArchivesSnake:
 
-pip3 -V
-
+```
+python3 -m pip install archivessnake
 ```
 
 ---
 
 ### Setup ArchivesSnake
 
-```
-
-pip install archivessnake
-
-```
-
-* ArchivesSpace instances
+* ArchivesSpace instance
+* We have to login from ArchivesSnake
 * Find home directory
 * create `.archivessnake.yml` file
 
 ---
 
-### ArchivesSpace Instances
+### ArchivesSpace Instance
 
-* Access via IP
-* Sample: 139.256.26.11
-* Port 8080 is Staff interface
-	* Browser: http://139.256.26.11:8080
-* Port 8081 is Public interface
-	* Browser: http://139.256.26.11:8081
-* Port 8089 is API
-	* Browser: http://139.256.26.11:8089
+* Try in your browser
+* xxxx.xxxxx.org is Public interface
+* xxxx.xxxxx.org/staff is Staff interface
+* xxxx.xxxxx.org/staff/api is API
 
 ---
 
@@ -274,9 +276,9 @@ pip install archivessnake
 
 ### ArchivesSnake Config file
 
+.archivessnake.yml in home directory
 
 ```
-
 baseurl: http://localhost:8089
 username: admin
 password: admin
@@ -286,6 +288,8 @@ logging_config:
 
 ```
 
+* Change URL, user, password
+
 ---
 
 ### What is a Python Script?
@@ -294,23 +298,7 @@ logging_config:
 	* name ends in ".py"
 	* Might start with:
     
-
 `#!/usr/bin/env python3`
-
----
-
-### Configure Text editor
-
-Try to change tabs to use spaces
-
-* Notepad++
-
-    * Settings -> Preferences... -> Language -> Check "Replace by space"
-* Sublime Text 3
-    * View -> Indentation -> Indent Using Spaces
-* Atom
-    * Default settings are fine.
-    * to change: File -> Settings -> Editor -> Uncheck "Soft Tabs"
 
 ---
 
@@ -319,13 +307,16 @@ Try to change tabs to use spaces
 * Command line in same directory as script
 * Python command, followed by script
 
-` python myScript.py`
+```python
+python3 myScript.py
+```
 
 ---
 
 ### Run First Script
 
 * create `test.py`
+* Command line must be in same directory
 
 ```python
 from asnake.aspace import ASpace
@@ -340,7 +331,18 @@ print (repo)
 
 ### Run First Script
 
-`python test.py`
+```python
+python3 test.py
+```
+
+---
+
+### How to use Jupyter Notebook
+
+* Access via IP
+* Port 8888
+* Sample: http://143.153.44.232:8888
+* Password needed
 
 ---
 
@@ -348,8 +350,8 @@ print (repo)
 
 * REST API
 * Web page for computers
-* [https://archives.albany.edu/collections/catalog/apap298](https://archives.albany.edu/collections/catalog/apap298)
-    * [https://archives.albany.edu/collections/catalog/apap298**?format=json**](https://archives.albany.edu/collections/catalog/apap298?format=json)
+* [https://archives.albany.edu/description/catalog/apap298](https://archives.albany.edu/description/catalog/apap298)
+    * [https://archives.albany.edu/description/catalog/apap298**?format=json**](https://archives.albany.edu/description/catalog/apap298?format=json)
 * [https://web.archive.org/web/*/https://dailygazette.com/](https://web.archive.org/web/*/https://dailygazette.com/)
     * [http://web.archive.org/cdx/search/cdx?url=https://dailygazette.com/](http://web.archive.org/cdx/search/cdx?url=https://dailygazette.com/)
 
