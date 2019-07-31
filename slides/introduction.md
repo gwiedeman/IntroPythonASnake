@@ -23,7 +23,7 @@ University at Albany, SUNY
 ### Dive in Approach
 
 * Learn Python syntax using ArchivesSpace data
-* Quickest way to manuiplate ArchivesSpace data
+* Quickest way to manuiplate data
 * Get started with syntax that works, trial and error from there
 * Context to know the boundaries
 
@@ -35,8 +35,8 @@ University at Albany, SUNY
 * Query ArchivesSpace data with ArchivesSnake
 * Understand data types
 * Understand basic Python syntax
-* Edit and manipulate ArchivesSpace Data
 * Use Conditionals and Loops
+* Edit and manipulate ArchivesSpace Data
 
 ---
 
@@ -52,8 +52,8 @@ University at Albany, SUNY
 
 * Wifi issues
 * Path issues
-* ArchivesSpace Instances
-	* we may break them
+* Notebook conflicts
+* ArchivesSpace instance issues
 
 ---
 
@@ -69,12 +69,17 @@ University at Albany, SUNY
 
 ---
 
-### Outline (1/3)
+### Outline
 
 * [Introduction](introduction.html)
-    * Setup/Install
     * Command Line Basics
+    * Setup/Install
     * First Python script
+    * Jupyter Notebook basics
+    
+---
+
+### Outline
 
 * [Syntax](syntax.html)
     * Comments, white space, variables
@@ -85,7 +90,7 @@ University at Albany, SUNY
     
 ---
 
-### Outline (2/3)
+### Outline
 
 * [Data](data.html)
     * Getting a Resource
@@ -99,7 +104,7 @@ University at Albany, SUNY
   
 ---
 
-### Outline (3/3)
+### Outline
 
 * [Advanced](advanced.html)
     * Post Data to ArchivesSpace
@@ -115,7 +120,31 @@ University at Albany, SUNY
 * Windows
 	* Command Prompt
 	* Windows Powershell
-	
+    
+---
+
+### Command Line Basics
+
+Your're in a folder!
+
+![Screenshot showing the same folder in Powershell and Windows Explorer.](https://raw.githubusercontent.com/gwiedeman/IntroPythonASnake/master/img/commandLine.png)
+
+---
+
+### Command Line Basics
+
+Open the folder!
+
+* macOS
+```
+open .
+```
+* Windows
+```
+ii .
+```
+
+
 ---
 
 ### Command Line Basics
@@ -150,7 +179,20 @@ University at Albany, SUNY
 
 * Use the command line to run programs
     * Python
-    * pip
+
+---
+
+### Setup/Install
+
+Do you have Python 3?
+
+```
+python -V
+> python 3.7.2
+
+python3 -V
+> python 3.6.3
+```
 
 ---
 
