@@ -174,6 +174,7 @@ file.close()
 ### Serialize ASpace Data to CSV
 
 ```python
+import os
 import csv
 from asnake.aspace import ASpace
 
@@ -215,7 +216,7 @@ file.close()
     * [ArchivesSnake Commonly Used Objects](https://github.com/archivesspace-labs/ArchivesSnake/wiki/Commonly-Used-Objects
 * [ArchivesSpace API Workshop](https://github.com/archivesspace/api-training
 * [API Overview Video - Valerie Addonizio](https://www.youtube.com/watch?v=NUtuQ-LqAr4)
-* Archives Data Slack: shoes-untied.slack.com
+* Archives Data Slack: shoes-untied.slack.com (Ask for an invite!)
 * [ArchivesSpace API docs](https://archivesspace.github.io/archivesspace/api/)
 
 ---

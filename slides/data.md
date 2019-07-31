@@ -13,7 +13,7 @@ revealOptions:
 ### Getting a Resource (Collection)
 
 * Login to an ArchivesSpace Instance
-    * use port :8080
+    * use /staff url
 * Pick a resource (collection)
 * Notice the URI
 
@@ -35,6 +35,30 @@ collection = repo.resources(129)
 print (collection)
 ```
 
+---
+
+### Using Objects
+
+* ArchivesSnake uses objects
+* Use dot syntax: `collection.title`
+* `dir(collection)` lists attributes
+* `type(collection.title)` shows data type
+* `collection.json()` to turns object into JSON
+
+---
+
+### ArchivesSnake Objects
+
+```python
+from asnake.aspace import ASpace
+
+aspace = ASpace()
+repo = aspace.repositories(2)
+
+collection = repo.resources(129)
+print (collection.title)
+print (dir(collection))
+```
 
 ---
 
@@ -55,11 +79,8 @@ from asnake.aspace import ASpace
 aspace = ASpace()
 repo = aspace.repositories(2)
 
-#collection = repo.resources(129)
-#print (collection)
-
-thing2 = 25
-myList = ["thing1", thing2, "thing3"]
+collection = repo.resources(129)
+myList = collection.notes
 
 print (type(myList))
 print (len(myList))
@@ -68,16 +89,15 @@ print (myList[1])
 
 ---
 
-### Lists
+### List Tools
 
 * Add to end of list: `myList.append("a thing")`
 * Add by index: `myList.insert(1, "a thing")`
 * Remove item with `myList.remove("a thing")` 
-* Test with: `25 in myList`
 
 ---
 
-### Lists
+### List Examples
 
 ```python
 from asnake.aspace import ASpace
@@ -125,13 +145,11 @@ from asnake.aspace import ASpace
 aspace = ASpace()
 repo = aspace.repositories(2)
 
-#collection = repo.resources(129)
-#print (collection)
-
-data = {"field": "a value", "Question": "Answer"}
+collection = repo.resources(129)
+data = collection.json()
 
 print (type(data))
-print (data["Question"])
+print (data["title"])
 data["decription"] = "here's some info"
 data["field"] = 336
 
@@ -150,40 +168,11 @@ from asnake.aspace import ASpace
 aspace = ASpace()
 repo = aspace.repositories(2)
 
-#collection = repo.resources(129)
-#print (collection)
-
-data = {"field": "a value", 
-    "Question": "Answer",
-    "myList":  ["thing1", "thing2", "thing3"]
-}
-
-print (data["myList"][1])
-
-```
----
-
-### Using Objects
-
-* ArchivesSnake uses objects
-* Use dot syntax: `collection.title`
-* `dir(collection)` lists attributes
-* `type(collection.title)` shows data type
-* `collection.json()` to turns object into a dictionary
-
----
-
-### ArchivesSnake Objects
-
-```python
-from asnake.aspace import ASpace
-
-aspace = ASpace()
-repo = aspace.repositories(2)
-
 collection = repo.resources(129)
-print (collection.title)
-print (dir(collection))
+data = collection.json()
+
+print (type(data["extents"][0]))
+print (data["extents"][0])
 ```
 
 ---
@@ -220,7 +209,7 @@ print (collection.extents[0].number)
 
 ---
 
-### Date Exercise
+### Exercise 1: Formatting Dates
 
 * Format collection date as EAD-style normal date
 * Print it as a variable
@@ -229,10 +218,11 @@ print (collection.extents[0].number)
 * Cheatsheets:
     * [syntax](https://github.com/gwiedeman/IntroPythonASnake/blob/master/syntax.md)
     * [data](https://github.com/gwiedeman/IntroPythonASnake/blob/master/data.md)
+    * [ASnake Commonly Used Objects](https://github.com/archivesspace-labs/ArchivesSnake/wiki/Commonly-Used-Objects)
 
 ---
 
-### Date Exercise
+### Exercise 1: Formatting Dates
 
 * Format collection date as EAD-style normal date
 * Print it as a variable
@@ -248,7 +238,7 @@ print (collection.extents[0].number)
 
 * Repeats for every item in a list
 * runs indented code
-* code without inded runs on completion
+* code without an indent runs on completion
 
 ```python
 for newVar in myList:
@@ -277,7 +267,7 @@ print ("finished!!")
 
 ---
 
-### ArchivesSnake lets you loop though resources
+#### ArchivesSnake lets you loop though resources!
 
 ```python
 from asnake.aspace import ASpace
@@ -323,6 +313,15 @@ print (str(count) + " total collections!")
 ```
 
 * `count += 1` is the same as `count = count + 1`
+
+---
+
+### Exercise 2: Counting Children
+
+* Hint: try `collection = repo.resources(number)`
+* How many children does a collection have?
+* Are they series? files?
+* Try a different collection
 
 ---
 
