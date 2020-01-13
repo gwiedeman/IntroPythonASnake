@@ -152,6 +152,7 @@ file.close()
 ## Serialize ASpace Data to CSV
 
 ```python
+import os
 import csv
 from asnake.aspace import ASpace
 
@@ -171,10 +172,11 @@ for collection in repo.resources:
     row.append(title)
     
     for date in collection.dates:
-        if date.end:
+        if "end" in dir(date):
             row.append(date.begin + "/" + date.end)
         else:
             row.append(date.begin)
+    sheet.append(row)
         
 file = open(csvFile, "w")
 writer = csv.writer(file)
@@ -192,8 +194,8 @@ file.close()
 * [ArchivesSpace API Workshop](https://github.com/archivesspace/api-training)
 * [API Overview Video - Valerie Addonizio](https://www.youtube.com/watch?v=NUtuQ-LqAr4)
 * Archives Data Slack: shoes-untied.slack.com
+    * Ask for an invite!
 * [ArchivesSpace API docs](https://archivesspace.github.io/archivesspace/api/)
-
 
 
 
