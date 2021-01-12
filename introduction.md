@@ -1,6 +1,6 @@
 # Introduction
 
-Slides: [http://www.gregwiedeman.com/presentations/workshop/introduction.html](http://www.gregwiedeman.com/presentations/workshop/introduction.html)
+Slides: [http://www.gregwiedeman.com/workshop/introduction.html](http://www.gregwiedeman.com/presentations/workshop/introduction.html)
 
 ## Command Line Basics
 

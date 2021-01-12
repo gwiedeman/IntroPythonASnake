@@ -2,7 +2,7 @@
 
 Working with ArchivesSpace data
 
-Slides: [http://www.gregwiedeman.com/presentations/workshop/data.html](http://www.gregwiedeman.com/presentations/workshop/data.html)
+Slides: [http://www.gregwiedeman.com/workshop/data.html](http://www.gregwiedeman.com/presentations/workshop/data.html)
 
 ## Getting a Resource (Collection)
 

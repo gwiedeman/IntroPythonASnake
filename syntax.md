@@ -1,6 +1,6 @@
 # Syntax
 
-Slides: [http://www.gregwiedeman.com/presentations/workshop/syntax.html](http://www.gregwiedeman.com/presentations/workshop/syntax.html)
+Slides: [http://www.gregwiedeman.com/workshop/syntax.html](http://www.gregwiedeman.com/workshop/syntax.html)
 
 ## Comments
 
